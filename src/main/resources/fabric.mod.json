@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "betterrecipes",
+	"version": "${version}",
+	"name": "Better Recipes",
+	"description": "Adds better recipes!",
+	"authors": [
+		"Fennec"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT License",
+	"icon": "assets/betterrecipes/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.fennec.betterrecipes.BetterRecipes"
+		],
+		"client": [
+			"net.fennec.betterrecipes.BetterRecipesClient"
+		],
+		"fabric-datagen": [
+			"net.fennec.betterrecipes.BetterRecipesDataGenerator"
+		]
+	},
+	"mixins": [
+		"betterrecipes.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.23",
+		"minecraft": "~1.20.2",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"sodium": "*",
+		"modmenu": "*"
+	}
+}
